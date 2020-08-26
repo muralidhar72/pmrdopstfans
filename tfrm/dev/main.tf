@@ -5,7 +5,7 @@ provider "aws" {
 
 # plan - execute 
 resource "aws_s3_bucket" "my_s3_bucket" {
-    bucket = "pmr1972abc-s3-bucket-pmr-1972abc"
+    bucket = "${terraform.workspace}_pmr2791"
     versioning {
         enabled = true
     }
