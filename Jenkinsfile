@@ -6,7 +6,7 @@ pipeline {
                 sh label: '', script: 'cd modules/${Environment} && terraform init'
             }
         }
-        stage('Terraform Apply ${Environment}') {
+        stage('Terraform Apply') {
             steps {
                 sh label: '', script: 'cd modules/${Environment} && terraform apply --auto-approve'
             }
